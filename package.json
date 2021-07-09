@@ -1,0 +1,24 @@
+{
+  "name": "action-pr-enable-auto-merge",
+  "version": "1.0.0",
+  "description": "GitHub Action to enable automatic merge on a pull request",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoremedia/action-pr-enable-auto-merge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scoremedia/action-pr-enable-auto-merge/issues"
+  },
+  "homepage": "https://github.com/scoremedia/action-pr-enable-auto-merge#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}
