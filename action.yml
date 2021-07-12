@@ -1,0 +1,26 @@
+name: 'Enable PR Auto Merge'
+description: 'Enables automatic merge on a pull request'
+inputs:
+  token:
+    description: 'GITHUB_TOKEN for a user with verified email'
+    required: true
+  pull-request-url:
+    description: 'The pull request url'
+    required: false
+  type:
+    description: 'Merge type. merge, squash, rebase'
+    required: true
+    default: 'merge'
+  author:
+    description: 'Author email address'
+    required: true
+  commit-headline:
+    description: 'The commit headline'
+    required: true
+  commit-message:
+    description: 'The commit message'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
