@@ -3,6 +3,7 @@ description: 'Enables automatic merge on a pull request'
 inputs:
   token:
     description: 'GITHUB_TOKEN for a user with verified email'
+    default: '${{ github.token }}'
     required: true
   pull-request-url:
     description: 'The pull request url'
@@ -22,5 +23,5 @@ inputs:
     required: false
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
